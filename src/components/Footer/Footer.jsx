@@ -5,7 +5,11 @@ import React from "react";
 // dynamically updated year.
 
 function Footer(props) {
-  return <div>Copyright {new Date().getFullYear()}</div>;
+  return (
+    <div>
+      <footer>Copyright {new Date().getFullYear()}</footer>
+    </div>
+  );
 }
 
 export default Footer;

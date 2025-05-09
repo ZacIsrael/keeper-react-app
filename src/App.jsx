@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from "./components/Header";
-import Footer from './components/Footer';
-import Note from './components/Note';
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Note from "./components/Note/Note";
 
 /*
 
@@ -21,19 +21,20 @@ for a title and a <p> for the content
 */
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   // In a real application, this data would be getting fetched from the server
   const appTitle = "Keeper App";
   const noteTitle = "Note 1";
-  const noteContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.";
+  const noteContent =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.";
 
   return (
     <>
-    <Header appName={appTitle}/>
-    <Note title={noteTitle} content={noteContent} />
-    <Footer />
+      <Header appName={appTitle} />
+      <Note title={noteTitle} content={noteContent} />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
