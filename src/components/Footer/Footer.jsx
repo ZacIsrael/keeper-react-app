@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 
 // Create a Footer.jsx component that renders a <footer>
 // element to show a copyright message in a <p> with a
@@ -6,9 +7,9 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <div>
-      <footer>Copyright {new Date().getFullYear()}</footer>
-    </div>
+    <footer>
+      <p>Copyright {new Date().getFullYear()}</p>
+    </footer>
   );
 }
 

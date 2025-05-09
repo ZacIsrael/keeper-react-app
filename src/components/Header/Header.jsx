@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Header.css';
+
 // Create a Header.jsx component that render a <header>
 // element to show the Keeper App name in an <h1>
 

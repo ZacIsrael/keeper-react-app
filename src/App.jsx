@@ -18,6 +18,9 @@ show a copyright message in a <p> with a dynamically updated year
 4. Create a Note.jsx component to show a <div> element with a <h1> 
 for a title and a <p> for the content
 
+The app should look like this: https://w00gz.csb.app/
+
+
 */
 
 function App() {
@@ -30,7 +33,7 @@ function App() {
 
   return (
     <>
-      <Header appName={appTitle} />
+      <Header class="header" appName={appTitle} />
       <Note title={noteTitle} content={noteContent} />
       <Footer />
     </>
