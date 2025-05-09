@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <Header class="header" appName={appTitle} />
+      <Header appName={appTitle} />
       <Note title={noteTitle} content={noteContent} />
       <Footer />
     </>

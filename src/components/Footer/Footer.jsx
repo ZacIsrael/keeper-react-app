@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+// import "./Footer.css";
 
 // Create a Footer.jsx component that renders a <footer>
 // element to show a copyright message in a <p> with a
