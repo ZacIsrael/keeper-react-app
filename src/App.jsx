@@ -60,14 +60,14 @@ function App() {
 
   return (
     <>
-      <Header appName={appTitle} />
-      {/* use map function to dynamically display notes (in a real application, they would be fetched from a backend server instead of a static array) */}
-      {notes.map((item, i) => (
-        <div key={i}>
-          <Note title={item.title} content={item.content} />
-        </div>
-      ))}
-      <Footer />
+      <div>
+        <Header appName={appTitle} />
+        {/* use map function to dynamically display notes (in a real application, they would be fetched from a backend server instead of a static array) */}
+        {notes.map((item, i) => (
+          <Note key={i} title={item.title} content={item.content} />
+        ))}
+        <Footer />
+      </div>
     </>
   );
 }
