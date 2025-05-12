@@ -26,6 +26,33 @@ The app should look like this: https://w00gz.csb.app/
 function App() {
   const [count, setCount] = useState(0);
   // In a real application, this data would be getting fetched from the server
+  const notes = [
+    {
+      key: 1,
+      title: "Delegation",
+      content:
+        "Q. How many programmers does it take to change a light bulb? A. None – It’s a hardware problem",
+    },
+    {
+      key: 2,
+      title: "Loops",
+      content:
+        "How to keep a programmer in the shower forever. Show him the shampoo bottle instructions: Lather. Rinse. Repeat.",
+    },
+    {
+      key: 3,
+      title: "Arrays",
+      content:
+        "Q. Why did the programmer quit his job? A. Because he didn't get arrays.",
+    },
+    {
+      key: 4,
+      title: "Hardware vs. Software",
+      content:
+        "What's the difference between hardware and software? You can hit your hardware with a hammer, but you can only curse at your software.",
+    },
+  ];
+
   const appTitle = "Keeper App";
   const noteTitle = "Note 1";
   const noteContent =
@@ -34,7 +61,12 @@ function App() {
   return (
     <>
       <Header appName={appTitle} />
-      <Note title={noteTitle} content={noteContent} />
+      {/* use map function to dynamically display notes (in a real application, they would be fetched from a backend server instead of a static array) */}
+      {notes.map((item, i) => (
+        <div key={i}>
+          <Note title={item.title} content={item.content} />
+        </div>
+      ))}
       <Footer />
     </>
   );
